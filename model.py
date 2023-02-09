@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 
 # Load the dataset
-df =pd.read_csv('./test.csv', on_bad_lines='skip')
+df =pd.read_csv('./dataset.csv', on_bad_lines='skip')
 
 # Split the dataset into train and test data
 X_train, X_test, y_train, y_test = train_test_split(df["Code"], df["language"], test_size=0.2, random_state=42)
